@@ -1,5 +1,9 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
 
 body {
 	padding: 0 50px 100px 50px;
@@ -15,12 +19,41 @@ h2 {
 	height: 100px;
 }
 
-.posun		{ background-color: #2ecc71;}
-.rotace 	{ background-color: #e74c3c;}
-.zvetseni	{ background-color: #3498db;}
+.posun {
+	background-color: #2ecc71;
+}
+
+.rotace {
+	background-color: #e74c3c;
+}
+
+.zvetseni {
+	background-color: #3498db;
+}
+
+.posledni {
+	background-color: aquamarine;
+}
 
 /* ----------------------- */
 
+.posun:hover {
+	transform: translate(10px, 10px);
+	transition: transform 0.3s;
+}
 
+.rotace:hover {
+	transform: rotate(30deg);
+	transform-origin: top left;
+	transition: transform 3s;
+}
 
+.zvetseni:hover {
+	transform: scale(1.2);
+	transition: transform 3s;
+}
 
+.posledni:hover {
+	transform: skew(30deg);
+	transition: transform 3s;
+}
